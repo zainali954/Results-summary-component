@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    padding-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-size: 17px;
+    position: relative;
+    background-color: var(--White);
+}
+
+:root {
+    /* Primary colors */
+    --Light-red: hsl(0, 100%, 67%);
+    --Orangey-yellow: hsl(39, 100%, 56%);
+    --Green-teal: hsl(166, 100%, 37%);
+    --Cobalt-blue: hsl(234, 85%, 45%);
+
+    --Light-red-back: hsla(0, 100%, 67%, 0.06);
+    --Orangey-yellow-back: hsla(39, 100%, 56%, 0.06);
+    --Green-teal-back: hsla(166, 100%, 37%, 0.06);
+    --Cobalt-blue-back: hsla(234, 85%, 45%, 0.06);
+
+    /* Gradients */
+    --Light-slate-blue: hsl(252, 100%, 67%);
+    /*(Background)*/
+    --Light-royal-blue: hsl(241, 81%, 54%);
+    /*(Background)*/
+    --Violet-blue: hsla(256, 72%, 46%, 1);
+    /*(circle)*/
+    --Persian-blue: hsla(241, 72%, 46%, 0);
+    /*(circle)*/
+
+    /* Neutral */
+    --White: hsl(0, 0%, 100%);
+    --Pale-blue: hsl(221, 100%, 96%);
+    --Light-lavender: hsl(241, 100%, 89%);
+    --Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+.container {
+    width: 640px;
+    display: flex;
+    border-radius: 20px;
+    box-shadow: var(--Cobalt-blue-back) 10px 25px 20px 10px;
+    background-color: var(--White);
+}
+
+#left,
+#right {
+    flex: 1;
+}
+
+#left {
+    padding: 30px;
+    text-align: center;
+    background-image: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    color: var(--White);
+    border-radius: 20px;
+
+}
+
+#left #result {
+    background-image: linear-gradient(var(--Violet-blue), var(--Persian-blue));
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 15px;
+    font-weight: 500;
+    color: #92a5be;
+    line-height: 1.1;
+
+}
+
+#left h1 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+#left p {
+    font-weight: 500;
+    color: var(--Light-lavender);
+    margin-bottom: 10px;
+}
+
+#result span {
+    font-size: 52px;
+    font-weight: 700;
+    color: var(--White);
+}
+
+
+
+#right {
+    padding: 28px;
+}
+
+#right h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--Dark-gray-blue);
+    margin-bottom: 20px;
+}
+
+#right .result-state {
+    display: flex;
+    padding: 14px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    font-weight: 600;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--Dark-gray-blue);
+}
+
+.inline-style {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#right .result-state-1 {
+    background-color: var(--Light-red-back);
+}
+
+#right .result-state-1 .category-name {
+    color: var(--Light-red);
+
+}
+
+#right .result-state-2 {
+    background-color: var(--Orangey-yellow-back);
+}
+
+#right .result-state-2 .category-name {
+    color: var(--Orangey-yellow);
+
+}
+
+#right .result-state-3 {
+    background-color: var(--Green-teal-back);
+}
+
+#right .result-state-3 .category-name {
+    color: var(--Green-teal);
+
+}
+
+#right .result-state-4 {
+    background-color: var(--Cobalt-blue-back);
+    margin-bottom: 35px;
+}
+
+#right .result-state-4 .category-name {
+    color: var(--Cobalt-blue);
+}
+
+.category-score-total {
+    color: #596677a2;
+}
+
+
+/* Button Styles */
+#right button {
+    width: 100%;
+    padding: 15px 0;
+    background-color: var(--Dark-gray-blue);
+
+    border: none;
+    border-radius: 25px;
+    color: var(--White);
+}
+#right button:hover{
+    background-image: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+    cursor: pointer;
+}
+#right button:focus{
+    background-image: linear-gradient(var(--Light-slate-blue), var(--Light-royal-blue));
+}
+
+/* Responsive Code */
+@media (max-width:425px) {
+    .container {
+        flex-direction: column;
+    }
+
+    #left {
+        border-radius: 0px 0px 20px 20px;
+    }
+    .attribution {
+        bottom: -30px;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
