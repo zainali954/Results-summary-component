@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/zainali954/Product-preview-card-component](https://github.com/zainali954/Product-preview-card-component)
-- Live Site URL: [zainali954.github.io](https://zainali954.github.io/Product-preview-card-component/)
+- Live Site URL: [https://zainali954.github.io/Results-summary-component/](https://zainali954.github.io/Results-summary-component/)
 
 ## My process
 
@@ -46,7 +46,7 @@ Users should be able to:
 
 ## Author
 
-- Website - [zainali954.github.io](https://zainali954.github.io/Product-preview-card-component/)
+- Website - [zainali954.github.io](https://zainali954.github.io/Results-summary-component/)
 - Frontend Mentor - [@zainali954](https://www.frontendmentor.io/profile/zainali954)
 
 
